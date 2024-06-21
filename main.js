@@ -5,6 +5,7 @@ const theboard = document.querySelector('.theboard');
 const copyright = document.querySelector('.copyright');
 const body = document.querySelector('body');
 
+
 hamBtn.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     hamBtn.innerHTML = navLinks.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
@@ -25,3 +26,22 @@ board.forEach(function(boardMember) {
   });
 theboard.innerHTML = boardHtml;
 copyright.innerHTML = `CTP ETHIOPIA © ${new Date().getFullYear()}`;
+// to calculate the height of the header and set the margin to of the main-image-container dynammically 
+function adjustMainImgMargin() {
+    const header = document.querySelector('header');
+    const mainImgContainer = document.querySelector('.main-img-container');
+    const headerHeight = header.offsetHeight;
+    mainImgContainer.style.marginTop = `${headerHeight}px`;
+    navLinks.style.top = `${headerHeight}px`;
+    
+  }
+  
+  // Initial adjustment on page load
+  adjustMainImgMargin();
+  
+  // Adjust on window resize
+  window.addEventListener('resize', adjustMainImgMargin);
+  
+
+  
+  
