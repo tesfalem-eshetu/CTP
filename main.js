@@ -4,6 +4,7 @@ const navLinks = document.querySelector('.nav-links');
 const theboard = document.querySelector('.theboard');
 const copyright = document.querySelector('.copyright');
 const body = document.querySelector('body');
+const indNavLinks = document.querySelectorAll('.ind-nav-links');
 
 
 hamBtn.addEventListener('click', () => {
@@ -11,6 +12,14 @@ hamBtn.addEventListener('click', () => {
     hamBtn.innerHTML = navLinks.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
     navLinks.classList.contains('active') ? navLinks.style.display = 'flex' : navLinks.style.display = 'none';
     body.classList.toggle('disaable-scroll');
+});
+indNavLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        navLinks.style.display = 'none';
+        body.classList.remove('disaable-scroll');
+    });
 });
 
 let boardHtml = ""
