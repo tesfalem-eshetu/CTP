@@ -1,14 +1,20 @@
 export const board = [
-    {   image: "tesfa.jpg",
-        name_: "Tesfalem <br>Hussien",
-        universty: "Columbia Universty",
-        position: "Co-President"
-    },
     {
         image: "bezawit.jpg",
         name_: "Bezawit <br> Biru",
         universty: "Columbia Universty",
-        position: "Co-President"
+        position: "President"
+    },
+    {
+        image: "debi.jpeg",
+        name_: "Debi <br> Ejeta",
+        universty: "graduate of columbia university",
+        position: "Senior Advisor Head"
+    },
+    {   image: "tesfa.jpg",
+        name_: "Tesfalem <br>Hussien",
+        universty: "Columbia Universty",
+        position: "Technolgy Team"
     },
     {   image: "abenezer.jpg",
         name_: "Abenezer<br> Amanuel",
