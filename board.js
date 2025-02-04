@@ -8,7 +8,7 @@ export const board = [
     {
         image: "debi.jpeg",
         name_: "Debi <br> Ejeta",
-        universty: "graduate of columbia university",
+        universty: "Graduate of Columbia University",
         position: "Senior Advisor Head"
     },
     {   image: "tesfa.jpg",
